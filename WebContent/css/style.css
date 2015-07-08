@@ -1,0 +1,35 @@
+img:hover{
+    cursor: pointer;
+}
+
+img{
+    width: 30px;
+    height: 30px;
+}
+
+th,td{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    margin: 50px 0px;
+}
+
+input[type="text"],select{
+    margin: 10px 0px;
+}
+
+body{
+    background-color: #f7f7f7;
+}
+
+.table-hover>tbody>tr:hover{
+    background-color: #fcfddc;
+}
+
+
+/*********** Add *************/
+.add .form-group > label{
+    margin-top: 10px;
+}
