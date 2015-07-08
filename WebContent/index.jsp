@@ -30,13 +30,13 @@
 					</div>
 				</form>
 			</div>
-			<!-- List of Class Name -->
+			
 			<div class="col-md-4">
 				<select class="form-control" name="class-name" id="class-name">
-					<!-- Read from Ajax -->
+
 				</select>
 			</div>
-			<!-- Status: Active OR Drop -->
+
 			<div class="col-md-4">
 				<select class="form-control" id="status" name="status">
 					<option value="">All Status</option>
@@ -45,14 +45,14 @@
 				</select>
 			</div>
 		</div>
-		<!-- Table Student Information -->
+
 		<div class="row">
 			<div class="col-md-12 table-responsive" id="student-info"></div>
 		</div>
-		<!-- Trigger -->
+
 		<button class="btn btn-primary" data-toggle="modal"
 			data-target="#bootstrapModal">Add New</button>
-		<!-- Modal -->
+			
 		<div class="modal fade" id="bootstrapModal" tabindex="-1"
 			role="dialog" aria-labelledby="bootstrapModalLabel"
 			aria-hidden="true">
@@ -70,7 +70,7 @@
 							<div class="row">
 								<div class="col-md-12 add">
 									<form class="form-horizontal">
-										<!-- Name -->
+									
 										<div class="form-group">
 											<label for="txt-name" class="col-sm-2 control-label">Name</label>
 											<div class="col-sm-3">
@@ -78,7 +78,7 @@
 													placeholder="Full Name">
 											</div>
 										</div>
-										<!-- Gender -->
+
 										<div class="form-group">
 											<label for="cbo-gender" class="col-sm-2 control-label">Gender</label>
 											<div class="col-sm-3">
@@ -89,7 +89,7 @@
 												</select>
 											</div>
 										</div>
-										<!-- University -->
+
 										<div class="form-group">
 											<label for="txt-university" class="col-sm-2 control-label">University</label>
 											<div class="col-sm-3">
@@ -97,7 +97,7 @@
 													placeholder="University Name">
 											</div>
 										</div>
-										<!-- Class -->
+
 										<div class="form-group">
 											<label for="cbo-class" class="col-sm-2 control-label">Class</label>
 											<div class="col-sm-3">
