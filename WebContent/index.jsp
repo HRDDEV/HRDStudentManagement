@@ -30,7 +30,7 @@
 					</div>
 				</form>
 			</div>
-			
+
 			<div class="col-md-4">
 				<select class="form-control" name="class-name" id="class-name">
 
@@ -52,7 +52,7 @@
 
 		<button class="btn btn-primary" data-toggle="modal"
 			data-target="#bootstrapModal">Add New</button>
-			
+
 		<div class="modal fade" id="bootstrapModal" tabindex="-1"
 			role="dialog" aria-labelledby="bootstrapModalLabel"
 			aria-hidden="true">
@@ -70,7 +70,7 @@
 							<div class="row">
 								<div class="col-md-12 add">
 									<form class="form-horizontal">
-									
+
 										<div class="form-group">
 											<label for="txt-name" class="col-sm-2 control-label">Name</label>
 											<div class="col-sm-3">
