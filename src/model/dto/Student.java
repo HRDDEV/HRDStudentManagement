@@ -36,7 +36,7 @@ public class Student {
 			temp = "Male";
 		}
 		else
-			temp="Femaleee";
+			temp="Female";
 		this.gender = temp;
 	}
 
