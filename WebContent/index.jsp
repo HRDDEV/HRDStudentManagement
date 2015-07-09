@@ -45,7 +45,7 @@
 						}
 						function listDetail(data) {
 							var str = "";
-							str += '<table class="table">' + '<tr>'
+							str += '<table class="table-bordered">' + '<tr>'
 									+ '<th>ID</th>' + '<th>Name</th>'
 									+ '<th>Gender</th>' + '<th>University</th>'
 									+ '<th>Class</th>' + '<th>Status</th>'
@@ -127,11 +127,13 @@
 
 					});
 </script>
+<style>
+</style>
 </head>
 
 <body>
 
-	<div class="container text-center">
+	<div class="container">
 
 		<div class="row">
 			<div class="col-md-12">
@@ -164,7 +166,6 @@
 		</div>
 	</div>
 
-	</div>
 
 </body>
 </html>
