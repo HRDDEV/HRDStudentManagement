@@ -15,16 +15,14 @@
 	$(document)
 			.ready(
 					function() {
-						/* Get value from Control */
+
 						var keyword = $('#search-text').val(), className = $(
 								'#class-name').val(), status = $('#status')
 								.val();
 						var studentInfo = $('div#student-info');
 
-						/* Load list of Class Name to Combo Box */
 						getClassList();
 
-						/* Load data into Table */
 						list();
 
 						function list() {
@@ -40,6 +38,7 @@
 									studentInfo.html(listDetail(data));
 									$('img').click(function() {
 										changeStatus($(this));
+
 									});
 								}
 							});
@@ -55,9 +54,11 @@
 								for (var i = 0; i < data.length; i++) {
 									var statusImage = (data[i].status == 1) ? "active.png"
 											: "drop.png";
+									var studentGender = (data[i].gender == 1) ? "Male"
+											: "Female";
 									str += '<tr>' + '<td>' + data[i].id
 											+ '</td>' + '<td>' + data[i].name
-											+ '</td>' + '<td>' + data[i].gender
+											+ '</td>' + '<td>' + studentGender
 											+ '</td>' + '<td>'
 											+ data[i].className + '</td>'
 											+ '<td>' + data[i].university
@@ -76,7 +77,6 @@
 							return str;
 						}
 
-						/* Load all class name into Class combo box */
 						function getClassList() {
 							var combobox = $('#class-name');
 							$
@@ -95,22 +95,17 @@
 									});
 						}
 
-						/* Retrieve data on typing on Textbox */
 						$('#search-text').keyup(function() {
 							keyword = $('#search-text').val();
 							list();
 						});
 
-						/* Filter Data in Table on select on Combox Box */
 						$('#class-name, #status').change(function() {
 							className = $('#class-name').val();
 							status = $('#status').val();
 							list();
 						});
 
-						/*
-						 * Change img src then update status in DB
-						 */
 						function changeStatus(img) {
 							var src = img.attr('src');
 							src = src.substr(src.lastIndexOf('/') + 1);
@@ -130,23 +125,19 @@
 							});
 						}
 
-
 					});
 </script>
 </head>
 
 <body>
 
-	<div class="container-fluid">
+	<div class="container text-center">
 
 		<div class="row">
 			<div class="col-md-12">
 				<h2>HRD Staff and Student Management</h2>
 			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-4">
 				<form class="form-inline">
 					<div class="form-group">
 						<label>Search by name : </label> <input type="text"
@@ -154,19 +145,24 @@
 							placeholder="Search here..." />
 					</div>
 				</form>
+			</div>
+			<div class="col-md-4">
 				<select class="form-control" name="class-name" id="class-name">
+				</select>
+			</div>
 
-				</select> <select class="form-control" id="status" name="status">
+			<div class="col-md-4">
+				<select class="form-control" id="status" name="status">
 					<option value="">All Status</option>
 					<option value="1">Active</option>
 					<option value="0">Drop</option>
 				</select>
 			</div>
-		</div>
 
-		<div class="row">
-			<div class="col-md-12 table-responsive" id="student-info"></div>
+			<!-- Display Student Info -->
+			<div class="col-md-12" id="student-info"></div>
 		</div>
+	</div>
 
 	</div>
 
