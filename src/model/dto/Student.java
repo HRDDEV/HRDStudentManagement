@@ -30,14 +30,7 @@ public class Student {
 	}
 
 	public void setGender(String gender) {
-		System.out.println(gender);
-		String temp;
-		if (gender=="1") {
-			temp = "Male";
-		}
-		else
-			temp="Female";
-		this.gender = temp;
+		this.gender = gender;
 	}
 
 	public String getUniversity() {
